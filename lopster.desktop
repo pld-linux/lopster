@@ -2,8 +2,9 @@
 Encoding=UTF-8
 Name=Lopster
 Comment=A Napster clone for linux written in gtk
-Comment[pl]=Klon klienta napstera napisany w gtk
+Comment[pl]=Klon klienta Napstera napisany w gtk
 Exec=lopster
 Terminal=false
 Type=Application
+Categories=Network;FileTransfer;
 # vi: encoding=utf-8
