@@ -6,5 +6,5 @@ Comment[pl]=Klon klienta Napstera napisany w GTK+
 Exec=lopster
 Terminal=false
 Type=Application
-Categories=Network;FileTransfer;
+Categories=GTK;Network;P2P;
 # vi: encoding=utf-8
