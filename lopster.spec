@@ -5,8 +5,6 @@ Version:	0.9.9
 Release:	1
 License:	GPL
 Group:		Applications/Communications
-Group(de):	Applikationen/Kommunikation
-Group(pl):	Aplikacje/Komunikacja
 Source0:	http://lopster.sourceforge.net/download/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-protocol.patch
