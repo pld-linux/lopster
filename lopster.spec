@@ -9,6 +9,7 @@ Group(de):	Applikationen/Kommunikation
 Group(pl):	Aplikacje/Komunikacja
 Source0:	http://lopster.sourceforge.net/download/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
+Patch0:		%{name}-protocol.patch
 URL:		http://lopster.sourceforge.net/
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	gettext-devel
@@ -27,6 +28,7 @@ Klon klienta napstera napisany w gtk.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm missing
