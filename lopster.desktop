@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Lopster
+Name[es]=Lopster
+Name[fi]=Lopster
+Name[gl]=Lopster
+Name[no]=Lopster
+Name[sv]=Lopster
+Name[pl]=Lopster
+Exec=lopster
+Terminal=0
+Type=Application
