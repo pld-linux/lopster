@@ -5,7 +5,7 @@ Version:	1.0.1
 Release:	1
 License:	GPL
 Group:		Applications/Communications
-Source0:	http://lopster.sourceforge.net/download/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-protocol.patch
 URL:		http://lopster.sourceforge.net/
