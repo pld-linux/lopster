@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	536e31b0864e0f5af2fe50807225e797
 Source1:	%{name}.desktop
 Patch0:		%{name}-protocol.patch
 URL:		http://lopster.sourceforge.net/
