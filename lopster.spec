@@ -29,9 +29,9 @@ Klon klienta napstera napisany w gtk.
 %patch0 -p1
 
 %build
-rm missing acinclude.m4
+rm -f missing acinclude.m4
 %{__gettextize}
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
