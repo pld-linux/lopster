@@ -1,0 +1,20 @@
+diff -urN lopster-0.9.8.org/src/connection.c lopster-0.9.8/src/connection.c
+--- lopster-0.9.8.org/src/connection.c	Wed May  9 20:22:15 2001
++++ lopster-0.9.8/src/connection.c	Wed May  9 20:23:40 2001
+@@ -936,8 +936,14 @@
+       return;
+     }
+   }
+-  
+-  protocol = getprotobyname("IP")->p_proto;
++
++  {
++      struct protoent *prt = getprotobyname("IP");
++      if (prt)
++	  protocol = prt->p_proto;
++      else
++	  protocol = 0;
++  }
+   sock = socket(AF_INET, SOCK_STREAM, protocol);
+   
+   if (sock < 0) {
