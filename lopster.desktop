@@ -3,6 +3,6 @@ Name=Lopster
 Comment=A Napster clone for linux written in gtk
 Comment[pl]=Klon klienta napstera napisany w gtk
 Exec=lopster
-Terminal=0
+Terminal=false
 Type=Application
 # vi: encoding=utf-8
