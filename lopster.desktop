@@ -1,11 +1,7 @@
 [Desktop Entry]
 Name=Lopster
-Name[es]=Lopster
-Name[fi]=Lopster
-Name[gl]=Lopster
-Name[no]=Lopster
-Name[sv]=Lopster
-Name[pl]=Lopster
+Comment=A Napster clone for linux written in gtk
+Comment[pl]=Klon klienta napstera napisany w gtk
 Exec=lopster
 Terminal=0
 Type=Application
