@@ -1,12 +1,12 @@
 Summary:	A Napster clone for linux written in gtk
 Summary(pl):	Klon klienta napstera napisany w gtk
 Name:		lopster
-Version:	1.2.0
+Version:	1.2.1
 Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	fedbe6b5c7944a4a21bc4554358a057d
+# Source0-md5:	229621304a1f458c7302f9d4da738b73
 Source1:	%{name}.desktop
 Patch0:		%{name}-protocol.patch
 URL:		http://lopster.sourceforge.net/
