@@ -1,22 +1,20 @@
 Summary:	A Napster clone for linux written in gtk
 Summary(pl):	Klon klienta napstera napisany w gtk
 Name:		lopster
-Version:	1.0.1
+Version:	1.2.0
 Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	536e31b0864e0f5af2fe50807225e797
+# Source0-md5:	fedbe6b5c7944a4a21bc4554358a057d
 Source1:	%{name}.desktop
 Patch0:		%{name}-protocol.patch
 URL:		http://lopster.sourceforge.net/
-BuildRequires:	gtk+-devel >= 1.2.0
-BuildRequires:	gettext-devel
-BuildRequires:	automake
 BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gtk+-devel >= 1.2.0
+BuildRequires:	libogg-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_sysconfdir	/etc/X11
 
 %description
 A Napster clone for linux written in gtk.
@@ -29,10 +27,9 @@ Klon klienta napstera napisany w gtk.
 %patch0 -p1
 
 %build
-rm -f missing acinclude.m4
-%{__gettextize}
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure
 
@@ -40,21 +37,20 @@ rm -f missing acinclude.m4
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 
-install %{SOURCE1}	$RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%find_lang %{name}
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
+%files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README BUGS
+%doc AUTHORS BUGS ChangeLog README README.pings TODO
+%lang(es) %doc README.ES
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/lopster
-%{_applnkdir}/Network/Misc/*.desktop
+%{_desktopdir}/*.desktop
