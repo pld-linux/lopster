@@ -30,7 +30,7 @@ Klon klienta napstera napisany w gtk.
 
 %build
 rm missing acinclude.m4
-gettextize --copy --force
+%{__gettextize}
 aclocal
 %{__autoconf}
 %{__automake}
