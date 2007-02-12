@@ -1,5 +1,5 @@
 Summary:	A Napster clone for Linux written using GTK+
-Summary(pl):	Klon klienta Napstera dla Linuksa napisany z uøyciem GTK+
+Summary(pl.UTF-8):   Klon klienta Napstera dla Linuksa napisany z u≈ºyciem GTK+
 Name:		lopster
 Version:	1.2.2
 Release:	3
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A Napster clone for Linux written using GTK+.
 
-%description -l pl
-Klon klienta Napstera dla Linuksa napisany z uøyciem GTK+.
+%description -l pl.UTF-8
+Klon klienta Napstera dla Linuksa napisany z u≈ºyciem GTK+.
 
 %prep
 %setup -q
